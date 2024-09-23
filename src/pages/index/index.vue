@@ -26,7 +26,7 @@
                 :text="item.text"
                 v-for="(item, index) in dynamicList"
                 :key="index"
-                @tap.native="clickCoupon(item.url)"
+                @click="clickCoupon(item.url)"
               />
             </wd-grid>
           </wd-col>
