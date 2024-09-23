@@ -16,14 +16,14 @@
     <view class="header">
       <view class="header-user">
         <wd-img :width="100" :height="100" :src="userInfo.headImageUrl">
-          <!-- <template #error>
+          <template #error>
             <view class="error-wrap">加载失败</view>
           </template>
           <template #loading>
             <view class="loading-wrap">
               <wd-loading />
             </view>
-          </template> -->
+          </template>
         </wd-img>
         <view class="header-user-nickname">
           <view class="nickname">{{ userInfo.userTrueName }}🧑‍💻</view>
@@ -191,10 +191,11 @@ const checkVeision = () => {
                             duration: 1500,
                           })
                         },
+                        // eslint-disable-next-line n/handle-callback-err
                         (error) => {
                           uni.showToast({
                             title: '安装失败',
-                            mask: false,
+                            mask: true,
                             duration: 1500,
                           })
                         },
