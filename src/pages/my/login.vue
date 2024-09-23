@@ -40,13 +40,6 @@
               />
             </template>
           </wd-input>
-          <!-- <view class="canvas-img-code" @click="refresh()">
-            <img
-              :src="validCodeBase64"
-              :style="{ width: width + 'px', height: height + 'px' }"
-              class="login-validCode-img"
-            />
-          </view> -->
         </view>
         <view class="login-main-body-bottom">
           <wd-checkbox v-model="rememberMe" @change="handleChange" shape="square">
